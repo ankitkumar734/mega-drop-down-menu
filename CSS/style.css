@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --brand: #02abe0;
+    --dark: #092032;
+    --body: #516171;
+    --border: rgba(0, 0, 0, 0.08);
+
+}
+
+/* navbar */
+.top-nav {
+
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #09183d;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.top-nav p {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.top-nav span,
+.top-nav i {
+    vertical-align: middle;
+}
+
+
+
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: #ff007b;
+    color: var(--brand);
+}
+
+
+/* Responsive top navbar  and text align in center with social_ icons */
+
+@media (max-width: 767.98px) {
+    .top-nav .row {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-nav .col-auto {
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav a:hover {
+        background-color: #02abe0;
+        color: #ff007b;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .navbar-nav .nav-item .dropdown-menu {
+        display: none;
+
+    }
+
+    .navbar-nav .nav-item:hover .dropdown-menu {
+        display: block;
+
+    }
+}
+
+
+
+
+
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ff007b;
+
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar-brand .dot {
+    color: var(--brand);
+}
+
+.dropdown-item:hover {
+
+    background-color: var(--brand);
+
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    border: none;
+    display: block;
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.nav-item.dropdown .nav-link svg.default-icon {
+    display: inline-block;
+}
+
+.nav-item.dropdown .nav-link svg.hover-icon {
+    display: none;
+}
+
+.nav-item.dropdown:hover .nav-link svg.default-icon {
+    display: none;
+}
+
+.nav-item.dropdown:hover .nav-link svg.hover-icon {
+    display: inline-block;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* shadow box  in navbar*/
+.navbar {
+    box-shadow: 1px 5px 10px Grey;
+}
+
+
+/* mega drop down menu */
+
+.mega-dropdown {
+    position: static;
+}
+
+.mega-dropdown-menu {
+    padding: 1remx;
+    /* take the width of mega drop down menu */
+    width: 70%;
+    /* sift of left side  left 20; */
+    left: 30;
+    right: 0;
+    /* top to height */
+    top: 80%;
+    display: none;
+    /* border none to outside the mega drop down menu */
+    border: none;
+    border-radius: 0;
+}
+
+.mega-dropdown:hover .mega-dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu.row {
+    padding: 1rem;
+    text-align: center;
+}
+
+.dropdown-menu.row h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -1px;
+    margin-bottom: 2px;
+
+}
+
+@media (max-width: 768px) {
+    .mega-dropdown-menu {
+        position: static;
+        width: auto;
+
+    }
+}
+
+
+
+
+
+.paragrap{
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+    text-align: justify;
+    /* text-align: center; */
+    font-family: 'popins';
+}
+
+
+
+
+
+/* footer start */
+
+.footer {
+    /* background-color: var(--brand); */
+    background-color: #09183d;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer h5 {
+    color: #fff;
+
+    /* color: #191919; */
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerh ul li a:hover {
+    color: #ff007b;
+
+}
+
+
+
+.footer p {
+    margin: 0;
+    color: #fff;
+}
+
+
+
+
+
+
+.footer .footer-icon {
+    display: flex;
+    gap: 5px;
+}
+
+.footer .footer-icon a {
+    background-color: #02abe0;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    border: 0.5px solid #0d0d0d;
+    padding: 10px;
+    border-radius: 100px;
+    transition: color 0.3s;
+}
+
+.f-icon {
+    text-align: center;
+}
+
+.footer .footer-icon a:hover {
+    color: black;
+    background-color: #ff007b;
+    transform: scale(1.1);
+
+}
+
+
+
+.footer .btn {
+    background-color: #02abe0;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .btn:hover {
+
+    background-color: #ff007b;
+    transform: scale(1.1);
+}
+
+/* shadow box in footer */
+.footer {
+    box-shadow: 0 0px 0px 2px #ff007b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* floating  window baar */
+.floating-action-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #007bff;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.floating-action-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.floating-action-button i {
+    font-size: 24px;
+}
+
+.floating-action-button .btn-circle {
+    border-radius: 50%;
+    font-size: 24px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.floating-action-button .floating-icons {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    gap: 10px;
+}
+
+.floating-action-button.active .floating-icons {
+    display: flex;
+}
